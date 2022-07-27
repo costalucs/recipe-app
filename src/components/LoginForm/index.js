@@ -47,13 +47,13 @@ export default function LoginForm() {
           <span>Chef</span>
         </h1>
         <input
-          placeholder='Email'
+          placeholder="Email"
           type="text"
           data-testid="email-input"
           onChange={ handleEmailInputChange }
         />
         <input
-          placeholder='Password'
+          placeholder="Password"
           type="password"
           data-testid="password-input"
           onChange={ handlePasswordInputChange }
