@@ -27,10 +27,8 @@ export default function SearchBar({ visible, hideSearchbar }) {
       saveRecipes(recipesByName);
     }
 
-    if (type === 'firstLetter') {
-      const recipesByFirstLetter = await FoodsService.requestByFirstLetter(searchParam);
-      saveRecipes(recipesByFirstLetter);
-    }
+    const recipesByFirstLetter = await FoodsService.requestByFirstLetter(searchParam);
+    saveRecipes(recipesByFirstLetter);
 
     hideSearchbar();
   }
@@ -47,11 +45,8 @@ export default function SearchBar({ visible, hideSearchbar }) {
       const recipesByName = await DrinksService.requestByName(searchParam);
       saveRecipes(recipesByName);
     }
-
-    if (type === 'firstLetter') {
-      const recipesByFirstLetter = await DrinksService.requestByFirstLetter(searchParam);
-      saveRecipes(recipesByFirstLetter);
-    }
+    const recipesByFirstLetter = await DrinksService.requestByFirstLetter(searchParam);
+    saveRecipes(recipesByFirstLetter);
   }
 
   function handleRadioOptionSelect({ target }) {
