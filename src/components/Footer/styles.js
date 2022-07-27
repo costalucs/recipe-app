@@ -13,8 +13,8 @@ export const StyledLink = styled(Link)`
 
     &.drinks {
       border-bottom: 3px solid ${({ theme, pathname }) => (
-        pathname === '/drinks' ? '#fff' : theme.colors.main.dark
-      )};
+    pathname === '/drinks' ? '#fff' : theme.colors.main.dark
+  )};
       ${({ pathname }) => pathname === '/drinks' && css`
         -webkit-box-shadow: inset 0px -2px 27px 1px rgba(255,255,255,0.42); 
         box-shadow: inset 0px -2px 27px 1px rgba(255,255,255,0.42);
@@ -23,8 +23,8 @@ export const StyledLink = styled(Link)`
 
     &.foods {
       border-bottom: 3px solid ${({ theme, pathname }) => (
-        pathname === '/foods' ? '#fff' : theme.colors.main.dark
-      )};
+    pathname === '/foods' ? '#fff' : theme.colors.main.dark
+  )};
       ${({ pathname }) => pathname === '/foods' && css`
         -webkit-box-shadow: inset 0px -2px 27px 1px rgba(255,255,255,0.42); 
         box-shadow: inset 0px -2px 27px 1px rgba(255,255,255,0.42);

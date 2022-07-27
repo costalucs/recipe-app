@@ -6,13 +6,12 @@ import {
   FavoriteRecipes, FoodDetail, FoodInProgressDetails, Profile,
 } from './pages';
 
-
 export default function Routes() {
   const location = useLocation();
 
   return (
     <AnimatePresence>
-      <Switch location={location} key={ location.pathname }>
+      <Switch location={ location } key={ location.pathname }>
         <Route exact path="/" component={ Login } />
         <Route exact path="/foods" component={ Foods } />
         <Route exact path="/foods/:id" component={ FoodDetail } />
@@ -33,5 +32,5 @@ export default function Routes() {
         <Route exact path="/profile" component={ Profile } />
       </Switch>
     </AnimatePresence>
-  )
+  );
 }

@@ -23,9 +23,9 @@ export default function DrinkInProgressDetails() {
   return (
     <motion.main
       className="drink-in-progress-details-page-container"
-      initial={{ opacity: 0, width: 0 }}
-      animate={{ opacity: 1, width: '100%' }}
-      exit={{ opacity: 0, x: '100%', transition: { duration: 0.4 } }}
+      initial={ { opacity: 0, width: 0 } }
+      animate={ { opacity: 1, width: '100%' } }
+      exit={ { opacity: 0, x: '100%', transition: { duration: 0.4 } } }
     >
       <RecipeInProgress recipe={ inProgressDrink[0] } />
     </motion.main>

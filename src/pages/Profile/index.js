@@ -22,16 +22,16 @@ export default function Profile() {
 
   return (
     <Styles.ProfilePageContainer
-      initial={{ opacity: 0, width: 0 }}
-      animate={{ opacity: 1, width: '100%', transition: { duration: 0.3 } }}
-      exit={{ opacity: 0, x: '100%', transition: { duration: 0.4 } }}
+      initial={ { opacity: 0, width: 0 } }
+      animate={ { opacity: 1, width: '100%', transition: { duration: 0.3 } } }
+      exit={ { opacity: 0, x: '100%', transition: { duration: 0.4 } } }
     >
       <Header title="Profile" />
 
       <Styles.ProfileContentContainer
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0, transition: { duration: 0.1 } }}
+        initial={ { opacity: 0 } }
+        animate={ { opacity: 1 } }
+        exit={ { opacity: 0, transition: { duration: 0.1 } } }
       >
         <p data-testid="profile-email" className="user-email">{email}</p>
 

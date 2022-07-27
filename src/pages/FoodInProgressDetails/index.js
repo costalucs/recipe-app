@@ -23,9 +23,9 @@ export default function FoodInProgressDetails() {
   return (
     <motion.main
       className="food-in-progress-details-page-container"
-      initial={{ opacity: 0, width: 0 }}
-      animate={{ opacity: 1, width: '100%' }}
-      exit={{ opacity: 0, x: '100%', transition: { duration: 0.4 } }}
+      initial={ { opacity: 0, width: 0 } }
+      animate={ { opacity: 1, width: '100%' } }
+      exit={ { opacity: 0, x: '100%', transition: { duration: 0.4 } } }
     >
       <RecipeInProgress recipe={ inProgressMeal[0] } />
     </motion.main>
