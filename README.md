@@ -1,4 +1,19 @@
-### Grupo 20 - Projeto em Grupo - Projeto APP de Receitas.
+# App de Receitas.
+
+Projeto final do módulo de Front-End do curso de Desenvolvimento Web FullStack da Trybe.
+
+Uma aplicação de receitas de drinks e pratos. 
+
+Projeto desenvolvido pensando no mobile first.
+
+# Tecnologias utilizadas
+
+- React JS
+- Context API
+- Styled Components 
+- React Testing Library
+
+# Colaboradores
 
 - Eduardo Ferreira da Costa.
 - Genilson Monteiro da Silva.
